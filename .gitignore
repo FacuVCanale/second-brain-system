@@ -1,0 +1,7 @@
+# Social drafts — not for the public repo
+_drafts/
+
+# OS / editor cruft
+.DS_Store
+.obsidian/
+*.tmp
