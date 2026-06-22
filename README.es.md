@@ -28,7 +28,7 @@ La mayoría de las herramientas te obligan a elegir entre una app de notas y una
 | Ejemplos | personas, empresas, decisiones, lecciones, estado de proyectos | tareas del día, planes, logs, reviews semanales |
 | Ritmo | cambia lento, **se acumula** | cambia cada día, **se archiva** |
 
-El Vault es el hub. Todo lo durable vive ahí como un **grafo de entidades** — una nota por persona, empresa, proyecto, reunión — cableadas entre sí con links. El Planner es un lugar aparte para el ruido de la ejecución diaria. Un script chico deja que el Planner *lea* el estado de los proyectos del Vault para planificar sin duplicarlo nunca.
+El Vault es el hub. Todo lo durable vive ahí como un **grafo de entidades** — una nota por persona, empresa, proyecto, reunión — cableadas entre sí con links. El Planner es un lugar aparte para el ruido de la ejecución diaria — en mi caso es **[cc-life-planner](https://github.com/FacuVCanale/cc-life-planner)**, su propio repo open-source (estado en Markdown + skills de Claude Code + un visor web local para la planificación diaria por Slack). Un script chico deja que el Planner *lea* el estado de los proyectos del Vault para planificar sin duplicarlo nunca.
 
 > **Regla de oro de todo el sistema:** *organizá por entidad, dejá que los links hagan el trabajo, y empezá simple.* No inventes estructura antes de necesitarla.
 

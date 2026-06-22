@@ -28,7 +28,7 @@ Most tools force you to choose between a note app and a to-do app, then watch th
 | Examples | people, companies, decisions, lessons, project state | today's tasks, plans, logs, weekly reviews |
 | Tempo | changes slowly, **accumulates** | changes daily, **gets archived** |
 
-The Vault is the hub. Everything durable lives there as a **graph of entities** — one note per person, company, project, meeting — wired together with links. The Planner is a separate place for the noise of daily execution. A small script lets the Planner *read* the Vault's project state so it can plan without ever duplicating it.
+The Vault is the hub. Everything durable lives there as a **graph of entities** — one note per person, company, project, meeting — wired together with links. The Planner is a separate place for the noise of daily execution — in my own setup that's **[cc-life-planner](https://github.com/FacuVCanale/cc-life-planner)**, its own open-source repo (Markdown state + Claude Code skills + a local web viewer for Slack-based daily planning). A small script lets the Planner *read* the Vault's project state so it can plan without ever duplicating it.
 
 > **Golden rule of the whole system:** *organize by entity, let the links do the work, and start simple.* Don't invent structure before you need it.
 
