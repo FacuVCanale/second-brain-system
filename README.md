@@ -1,4 +1,4 @@
-<!-- LANG TOGGLE --> **English** · [Español](README.es.md)
+**English** · [Español](README.es.md)
 
 # 🧠 The Second Brain System
 
