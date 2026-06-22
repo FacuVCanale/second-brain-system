@@ -76,7 +76,7 @@ flowchart TB
     PLAN -->|logueador/capturador WRITE state| VAULT
 
     VAULT <-->|MCP: read/write/search| CLAUDE["Claude Code"]
-    VAULT -.->|@import auto every session| CONV["Brain/Conventions → CLAUDE.md"]
+    VAULT -.->|"@import auto every session"| CONV["Brain/Conventions → CLAUDE.md"]
     CONV --> CLAUDE
 ```
 
@@ -485,7 +485,7 @@ The **learning contract** closes the loop: when the user corrects Claude or stat
 flowchart LR
     F["The user corrects /<br/>states a preference"] --> L["Brain/Lessons/<br/>what happened → why → rule"]
     L -->|recurring / firm rule| C["Brain/Conventions/<br/>(auto-loaded)"]
-    C -->|@import in CLAUDE.md| S["Every future<br/>Claude Code session"]
+    C -->|"@import in CLAUDE.md"| S["Every future<br/>Claude Code session"]
     S -.->|doesn't repeat the mistake| F
 ```
 

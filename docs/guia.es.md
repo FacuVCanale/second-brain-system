@@ -74,7 +74,7 @@ flowchart TB
     PLAN -->|logueador/capturador ESCRIBEN estado| VAULT
 
     VAULT <-->|MCP: read/write/search| CLAUDE["Claude Code"]
-    VAULT -.->|@import auto en cada sesión| CONV["Brain/Conventions → CLAUDE.md"]
+    VAULT -.->|"@import auto en cada sesión"| CONV["Brain/Conventions → CLAUDE.md"]
     CONV --> CLAUDE
 ```
 
@@ -481,7 +481,7 @@ El **contrato de aprendizaje** cierra el loop: cuando el usuario corrige a Claud
 flowchart LR
     F["El usuario corrige /<br/>expresa preferencia"] --> L["Brain/Lessons/<br/>qué pasó → por qué → regla"]
     L -->|recurrente / regla firme| C["Brain/Conventions/<br/>(auto-cargado)"]
-    C -->|@import en CLAUDE.md| S["Toda sesión futura<br/>de Claude Code"]
+    C -->|"@import en CLAUDE.md"| S["Toda sesión futura<br/>de Claude Code"]
     S -.->|ya no repite el error| F
 ```
 
