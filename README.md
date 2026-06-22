@@ -6,12 +6,13 @@
 
 Everyone knows what a second brain is by now. **Almost nobody runs one that actually works.**
 
-Not because they don't take notes — because of two mistakes that quietly rot every system:
+Not because they don't take notes — because of three mistakes that quietly rot every system:
 
-1. **They treat it as a drawer of notes**, not a database. Notes pile up, nothing connects, and six months later you can't find the one thing you needed.
-2. **They mix two different things in one place** — durable *knowledge* ("what do I know? who do I know?") and day-to-day *operation* ("what do I do today?"). Tasks bleed into reference, reference bleeds into journaling, and the whole thing turns to mush.
+0. **They let an AI one-shot the whole thing.** With no schema and no analysis of how they actually work, the assistant invents structure and wires up topics that don't belong together — while missing the ones that do. (An AI is great at *maintaining* a system; it's bad at *inventing* yours from a blank page.)
+1. **They treat it as a drawer of notes**, not a database. Notes pile up, and six months later you can't find the one thing you needed.
+2. **They mix two different things in one place** — durable *knowledge* ("what do I know? how do I know it?") and day-to-day *operation* ("what should I do?"). Tasks bleed into reference, reference bleeds into journaling, and the whole thing turns to mush.
 
-This repo is the system I use to avoid both — and the part most guides skip: **how an AI assistant keeps it alive instead of you doing all the upkeep by hand.**
+This repo is the system I use to avoid all three — and the part most guides skip: **how an AI assistant keeps it alive instead of you doing all the upkeep by hand.**
 
 It's plain Markdown in an [Obsidian](https://obsidian.md) vault, versioned in git. Two "users" read and write it: **me** (from Obsidian) and **an AI agent** ([Claude Code](https://www.anthropic.com/claude-code), via an MCP server). No proprietary app, no lock-in, no database server. Just text files and a few rules.
 
@@ -24,7 +25,7 @@ Most tools force you to choose between a note app and a to-do app, then watch th
 |  | **The Vault** (knowledge) | **The Planner** (operation) |
 |---|---|---|
 | Holds | the **durable and connected** | the **operational** |
-| Answers | *what do I know? who/what do I know?* | *what do I do today?* |
+| Answers | *what I know · how I know it · who I know* | *what I should do* |
 | Examples | people, companies, decisions, lessons, project state | today's tasks, plans, logs, weekly reviews |
 | Tempo | changes slowly, **accumulates** | changes daily, **gets archived** |
 
@@ -89,7 +90,7 @@ The trick that keeps `Library/` from becoming a junk drawer: knowledge is **born
 
 This isn't a product — it's a system you can copy today.
 
-1. **Read the guide** ([English](docs/guide.en.md) · [Español](docs/guia.es.md)) — the whole thing explained folder by folder, with diagrams and end-to-end walkthroughs. Every example uses an invented cast, so there's no real data anywhere.
+1. **Read the guide** ([English](docs/guide.en.md) · [Español](docs/guia.es.md)) — or download the polished PDF ([EN](docs/guide.en.pdf) · [ES](docs/guia.es.pdf)) — the whole thing explained folder by folder, with diagrams and end-to-end walkthroughs. Every example uses an invented cast, so there's no real data anywhere.
 2. **Grab the [schema](docs/schema.en.md)** — adapt the note types and vocabulary to your own life.
 3. **Grab the [templates](templates/)** — drop-in [Templater](https://github.com/SilentVoid13/Templater) templates for each note type, so every note is born with the right structure.
 4. **Wire up the AI** — point an MCP-capable agent at the vault and let the loop above do the upkeep.

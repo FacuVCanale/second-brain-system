@@ -6,12 +6,13 @@
 
 A esta altura todo el mundo sabe qué es un second brain. **Casi nadie tiene uno que funcione de verdad.**
 
-No porque no tomen notas — por dos errores que silenciosamente pudren cualquier sistema:
+No porque no tomen notas — por tres errores que silenciosamente pudren cualquier sistema:
 
-1. **Lo tratan como un cajón de notas**, no como una base de datos. Las notas se amontonan, nada se conecta, y seis meses después no encontrás la única cosa que necesitabas.
-2. **Mezclan dos cosas distintas en el mismo lugar** — el *conocimiento* durable ("¿qué sé? ¿a quién conozco?") y la *operación* del día a día ("¿qué hago hoy?"). Las tareas se meten en la referencia, la referencia se mezcla con el diario, y todo se vuelve un puré.
+0. **Le dejan a una IA armar todo de un saque.** Sin schema y sin análisis de cómo trabajan en serio, el asistente inventa estructura y conecta temas que no tienen que ver — y pasa por alto los que sí. (Una IA es buenísima *manteniendo* un sistema; es mala *inventando* el tuyo desde una hoja en blanco.)
+1. **Lo tratan como un cajón de notas**, no como una base de datos. Las notas se amontonan, y seis meses después no encontrás la única cosa que necesitabas.
+2. **Mezclan dos cosas distintas en el mismo lugar** — el *conocimiento* durable ("¿qué sé? ¿cómo lo sé?") y la *operación* del día a día ("¿qué tengo que hacer?"). Las tareas se meten en la referencia, la referencia se mezcla con el diario, y todo se vuelve un puré.
 
-Este repo es el sistema que uso para evitar los dos — y la parte que casi ninguna guía cuenta: **cómo un asistente de IA lo mantiene vivo, en vez de que toda la tarea de mantenimiento caiga sobre vos.**
+Este repo es el sistema que uso para evitar los tres — y la parte que casi ninguna guía cuenta: **cómo un asistente de IA lo mantiene vivo, en vez de que toda la tarea de mantenimiento caiga sobre vos.**
 
 Es Markdown plano en un vault de [Obsidian](https://obsidian.md), versionado en git. Dos "usuarios" lo leen y escriben: **yo** (desde Obsidian) y **un agente de IA** ([Claude Code](https://www.anthropic.com/claude-code), vía un servidor MCP). Sin app propietaria, sin lock-in, sin servidor de base de datos. Solo archivos de texto y unas pocas reglas.
 
@@ -24,7 +25,7 @@ La mayoría de las herramientas te obligan a elegir entre una app de notas y una
 |  | **El Vault** (conocimiento) | **El Planner** (operación) |
 |---|---|---|
 | Guarda | lo **durable y conectado** | lo **operacional** |
-| Responde | *¿qué sé? ¿a quién/qué conozco?* | *¿qué hago hoy?* |
+| Responde | *qué sé · cómo lo sé · a quién conozco* | *qué tengo que hacer* |
 | Ejemplos | personas, empresas, decisiones, lecciones, estado de proyectos | tareas del día, planes, logs, reviews semanales |
 | Ritmo | cambia lento, **se acumula** | cambia cada día, **se archiva** |
 
@@ -89,7 +90,7 @@ El truco que evita que `Library/` se vuelva un cajón de sastre: el conocimiento
 
 Esto no es un producto — es un sistema que podés copiar hoy.
 
-1. **Leé la guía** ([Español](docs/guia.es.md) · [English](docs/guide.en.md)) — todo explicado carpeta por carpeta, con diagramas y recorridos de punta a punta. Cada ejemplo usa un elenco inventado, así que no hay data real en ningún lado.
+1. **Leé la guía** ([Español](docs/guia.es.md) · [English](docs/guide.en.md)), o descargá el PDF ([ES](docs/guia.es.pdf) · [EN](docs/guide.en.pdf)) — todo explicado carpeta por carpeta, con diagramas y recorridos de punta a punta. Cada ejemplo usa un elenco inventado, así que no hay data real en ningún lado.
 2. **Agarrá el [schema](docs/schema.es.md)** — adaptá los tipos de nota y el vocabulario a tu propia vida.
 3. **Agarrá las [plantillas](templates/)** — plantillas [Templater](https://github.com/SilentVoid13/Templater) listas para cada tipo de nota, así cada nota nace con la estructura correcta.
 4. **Conectá la IA** — apuntá un agente con MCP al vault y dejá que el loop de arriba haga el mantenimiento.
